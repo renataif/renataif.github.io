@@ -38,7 +38,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a {
@@ -47,9 +47,13 @@ a {
   color: black;
 }
 
-h2 {
+h1 {
   margin-bottom: 20px;
   font-size: 2.2rem;
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .sobre {
@@ -155,7 +159,7 @@ h2 {
 }
 
 .curso-item img {
-  margin-top: 13px;
+  margin-top: 8px;
   gap: 10px 20px;
 }
 
@@ -189,19 +193,14 @@ h2 {
   gap: 10px 20px;
 }
 
-.habi-item p {
-  margin-bottom: 10px;
-}
-
 .habi-item img {
-  margin-top: 13px;
+  margin-top: 7px;
   gap: 10px 20px;
 }
-
 .rodape {
   width: 100%;
   display: block;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   background: #9c372b;
   color: #fff;
   padding-top: 40px;
@@ -217,6 +216,11 @@ h2 {
   margin: 0 auto;
 }
 
+.contato-info p {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .contato-link {
   display: flex;
   gap: 40px;
@@ -226,18 +230,6 @@ h2 {
 
 .linkedin {
   color: #fff;
-}
-
-.contato-detalhe {
-  width: 500px;
-}
-
-.contato-detalhe a {
-  font-weight: 500;
-}
-
-.contato-detalhe a:hover {
-  color: #2c2c2c;
 }
 
 @media (max-width: 1200px) {
@@ -395,7 +387,7 @@ h2 {
     gap: 20px;
   }
 
-  .sobre h2 {
+  .sobre h1 {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -559,9 +551,8 @@ h2 {
 
   .contato-detalhe {
     width: 350px;
-  }
-
-  .contato-detalhe a {
-    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
